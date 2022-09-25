@@ -10,24 +10,49 @@
     <h1>Payment Form</h1>
     <div class="wrapper">
             <h3>Contact Information</h3>
-            <h3>Fields with * are compulsory</h3>
+            <h3>All fields are required</h3>
 
-            <form action="">
-            <p>
-                <label for="fullname">*Full Name:</label>
+            <p>Full Name:
                 <input type="text" required>
             </p>
 
-            <p>
-                <label for="Gender">*Gender:</label>
+            <p>Gender:
                 <label for="Male">Male</label>
-                <input type="radio" name="Male" id="Male">
+                <input type="radio" name="Male" id="Male" required>
                 <label for="Female">Female</label>
-                <input type="radio" name="Female" id="Female">
+                <input type="radio" name="Female" id="Female" required>
                 <label for="Other">Other</label>
-                <input type="radio" name="Other" id="Other">
+                <input type="radio" name="Other" id="Other" required>
             </p>
-           </form>
+
+            <p>Address:
+                <textarea name="" id="" cols="30" rows="10" placeholder="Type in your address" required></textarea>
+            </p>
+
+            <p>Email
+                <input type="email" name="" id="email" required>
+            </p>
+
+            <p>Postal Code:
+                <input type="number" name="" id="">
+            </p>
+
+            <h3>Payment Information</h3>
+
+            <p>Card Type:
+                <select name="cardtype" id="">
+                    <option value="5">--Select A Card Type--</option>
+                    <option value="4">MasterCard</option>
+                    <option value="3">Visa</option>
+                    <option value="2">Rupay</option>
+                    <option value="1">Verve</option>
+                </select>
+            </p>
+
+            <p>Card Number:
+                <input type="number">
+            </p>
+
     </div>
 </body>
 </html>
