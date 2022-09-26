@@ -40,7 +40,7 @@
             <h3>Payment Information</h3>
 
             <p>Card Type:
-                <select name="cardtype" id="">
+                <select name="cardtype" id="" required>
                     <option value="5">--Select A Card Type--</option>
                     <option value="4">MasterCard</option>
                     <option value="3">Visa</option>
@@ -53,6 +53,15 @@
                 <input type="number">
             </p>
 
+            <p>Expiration Date:
+                <input type="date" name="" id="" required>
+            </p>
+
+            <p>CVV
+                <input type="number" name="" id="" required>
+            </p>
+
+            <button type="submit">Pay Now</button>
     </div>
 </body>
 </html>
